@@ -2,14 +2,12 @@
 
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "alpinelab/codestyle/version"
+require "alpine_lab/code_style/version"
 
 Gem::Specification.new do |spec|
   spec.name = "alpinelab-codestyle"
-  spec.version = Alpinelab::Codestyle::VERSION
-  spec.files = Dir["README.md", "LICENSE.md", "config/*.yml", "lib/**/*.rb"]
-
-  spec.required_ruby_version = ">= 2.3.0"
+  spec.version = AlpineLab::CodeStyle::VERSION
+  spec.files = Dir["README.md", "LICENSE.md", "config/*.yml"]
 
   spec.summary = "Code style used by AlpineLab"
   spec.description = <<~DESCRIPTION
@@ -21,4 +19,9 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://www.alpine-lab.com"
   spec.authors = ["AlpineLab developers"]
   spec.email = ["dahu@alpine-lab.com"]
+
+  spec.required_ruby_version = ">= 2.3.0"
+
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
 end
