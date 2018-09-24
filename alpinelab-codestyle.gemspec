@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
     other conventions not transposable as automated rules (those are explained
     as plain Markdown).
   DESCRIPTION
+  spec.license = "MIT"
   spec.homepage = "https://www.alpine-lab.com"
   spec.authors = ["AlpineLab developers"]
   spec.email = ["dahu@alpine-lab.com"]
