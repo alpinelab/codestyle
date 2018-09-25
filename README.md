@@ -4,15 +4,27 @@ Code style used by AlpineLab in all our projects.
 
 ## Usage
 
-### Rubocop integration
+1. Add this gem to your `Gemfile` (or `gems.rb`, or `gems.deps.rb`):
 
-* Use this gem as a dependency, or just install it;
-* Update Rubocop configuration with:
-  ``` yaml
-  inherit_gem:
-    alpinelab-codestyle:
-      - config/default.yml
-  ```
+    ```ruby
+    group :development do
+      gem "alpinelab-codestyle", "~> x.y"
+    end
+    ```
+
+    or install it manually:
+
+    ```shell
+    gem install alpinelab-codestyle
+    ```
+
+2. Create or prepend your Rubocop configuration (usually `.rubocop.yml`) with:
+
+    ```yaml
+    inherit_gem:
+      alpinelab-codestyle:
+        - config/default.yml
+    ```
 
 ## License
 
