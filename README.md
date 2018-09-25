@@ -4,10 +4,26 @@ Code style used by AlpineLab in all our projects.
 
 ## Usage
 
-1. Add this gem to your `Gemfile` (or `gems.rb`, or `gems.deps.rb`):
+1. Add `rubocop` gems to your `Gemfile` (or `gems.rb`, or `gems.deps.rb`):
 
     ```ruby
-    group :development do
+    group :development, :test do
+      gem "rubocop", "~> x.y", require: false
+      gem "rubocop-md", "~> x.y", require: false
+    end
+    ```
+
+    or install them manually:
+
+    ```shell
+    gem install rubocop rubocop-md
+    ```
+
+2. Add `alpinelab-codestyle` gem to your `Gemfile`
+(or `gems.rb`, or `gems.deps.rb`):
+
+    ```ruby
+    group :development, :test do
       gem "alpinelab-codestyle", "~> x.y"
     end
     ```
@@ -18,7 +34,7 @@ Code style used by AlpineLab in all our projects.
     gem install alpinelab-codestyle
     ```
 
-2. Create or prepend your Rubocop configuration (usually `.rubocop.yml`) with:
+3. Create or prepend your Rubocop configuration (usually `.rubocop.yml`) with:
 
     ```yaml
     inherit_gem:
