@@ -4,6 +4,9 @@ Layout/EndAlignment:
 Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
 
+Style/AndOr:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
