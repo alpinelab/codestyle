@@ -40,6 +40,7 @@ Code style used by AlpineLab in all our projects.
     inherit_gem:
       alpinelab-codestyle:
         - config/default.yml
+        - config/rails.yml
     ```
 
 ## Best practices

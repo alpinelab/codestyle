@@ -1,0 +1,10 @@
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - bin/*
+    - config/boot.rb
+    - config/environment.rb
+    - config/environments/**/*.rb
+    - db/schema.rb
