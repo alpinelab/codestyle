@@ -4,6 +4,9 @@ Layout/AccessModifierIndentation:
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
 
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
 Metrics:
   Exclude:
     - spec/**/*.rb
