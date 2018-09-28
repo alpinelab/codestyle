@@ -33,3 +33,27 @@ module MyRailsApp
   end
 end
 ```
+
+## Routing
+
+### Format segregation
+
+Actual format segregation should be performed **based on the HTTP `Accept` header**
+(`Accept: application/json`), *not* based on a URL suffix (`/resource.json`).
+
+A unique resource should only be requested on a unique URL, which is why we
+should **avoid extension-based routing** as much as possible.
+
+```
+# bad
+GET /resources.html
+GET /resources.json
+
+# bad
+GET /resources       [Accept: text/html]
+GET /api/resources   [Accept: application/json]
+
+# good
+GET /resources       [Accept: text/html]
+GET /resources       [Accept: application/json]
+```
