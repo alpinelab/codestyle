@@ -57,3 +57,21 @@ GET /api/resources   [Accept: application/json]
 GET /resources       [Accept: text/html]
 GET /resources       [Accept: application/json]
 ```
+
+This can be achieved in Rails using the following router configuration:
+
+```ruby
+Rails.application.routes.draw do
+  concern :resources do
+    resources :posts
+    resources :comments
+  end
+
+  scope format: ENV.key?("ALLOW_FORMAT_FROM_URL") ? nil : false do
+    scope module: :api, constraints: ->(req) { req.format == :json } do
+      concerns :resources
+    end
+    concerns :resources
+  end
+end
+```
