@@ -7,6 +7,9 @@ Layout/AlignParameters:
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
 
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
 Metrics:
   Exclude:
     - spec/**/*.rb
