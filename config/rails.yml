@@ -7,4 +7,4 @@ AllCops:
     - config/boot.rb
     - config/environment.rb
     - config/environments/**/*.rb
-    - db/*
+    - db/**/*
