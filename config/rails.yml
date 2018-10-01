@@ -3,6 +3,7 @@ Rails:
 
 AllCops:
   Exclude:
+    - Rakefile
     - bin/*
     - config/boot.rb
     - config/environment.rb
