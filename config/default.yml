@@ -41,6 +41,9 @@ Style/Documentation:
 Style/DoubleNegation:
   Enabled: false
 
+Style/Lambda:
+  EnforcedStyle: literal
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
