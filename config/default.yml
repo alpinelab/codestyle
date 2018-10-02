@@ -4,6 +4,9 @@ Layout/AccessModifierIndentation:
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
 Layout/EmptyLineAfterMagicComment:
   Enabled: false
 
