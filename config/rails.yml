@@ -9,3 +9,7 @@ AllCops:
     - config/environment.rb
     - config/environments/**/*.rb
     - db/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
