@@ -1,10 +1,10 @@
+# Configuration
+
 inherit_mode:
   merge:
     - Exclude
 
-AllCops:
-  Exclude:
-    - node_modules/**/*
+# Cops
 
 Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
