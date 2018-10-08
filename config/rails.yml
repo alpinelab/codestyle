@@ -13,3 +13,5 @@ AllCops:
 Metrics/BlockLength:
   Exclude:
     - config/routes.rb
+    - app/serializers/*
+    - lib/tasks/*
