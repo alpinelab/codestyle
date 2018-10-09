@@ -1,19 +1,25 @@
-# Rails conventions
+# Rails-specific best practices
 
-## App behavior should be configured via environment variables
+## Application configuration
 
-When implementing new features, it should not depend on current
-`RAILS_ENV` value, but environment variable(s) specific to the
-feature.
+Application configuration should **depend on environment variables**,
+and absolutely **not rely on `RAILS_ENV`** value (nor `Rails.env`),
+respecting the [12-factor app methodology][12-factor config].
 
-* Avoid modifying `config/environments/*.rb`, and keep default
-  Rails configuration (this will also help when updating Rails)
-* Avoid testing:
+Specifically, the following rules should be followed:
+
+* Avoid modifying `config/environments/*.rb`: keep default Rails configuration
+  in there untouched (this will also make Rails upgrades a lot smoother)
+* Write application configuration in `config/application.rb`
+* Avoid testing any of:
+  * `ENV["RACK_ENV"]`
+  * `ENV["RAILS_ENV"]`
   * `Rails.env.development?`
   * `Rails.env.production?`
   * `Rails.env.test?`
 
 Examples:
+
 ``` ruby
 # bad:
 module MyRailsApp
@@ -75,3 +81,5 @@ Rails.application.routes.draw do
   end
 end
 ```
+
+[12-factor config]: https://12factor.net/config
