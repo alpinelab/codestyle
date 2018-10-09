@@ -60,9 +60,7 @@ Some conventions are adopted and enforced, in no particular order:
 
 To release this very gem:
 
-1. Bump its version number in
-[`lib/alpine_lab/code_style/version.rb`](lib/alpine_lab/code_style/version.rb)
-according to [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
+1. Bump its version number in [`version.rb`] respecting [Semantic Versioning 2]
 
 2. Use Bundler Rake task to build, tag and push the gem:
 
@@ -70,13 +68,21 @@ according to [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
     rake release
     ```
 
-    _(with Docker, you need to have configured both
-    [Git authentication](https://github.com/alpinelab/docker-ruby-dev/blob/latest/RECIPES.md#git-authentication)
-    and [Rubygems authentication](https://github.com/alpinelab/docker-ruby-dev/blob/latest/RECIPES.md#rubygems-authentication)
-    then you can run the same command with `docker-compose run app rake release`)_
+    _(using Docker, both [Git authentication] and [Rubygems authentication] must
+    be configured to run `docker-compose run app rake release`)_
 
 ## License
 
-This project is developed by [Alpine Lab](https://www.alpine-lab.com) and released under the terms of the [MIT license](LICENSE.md).
+This project is developed by [Alpine Lab] and released under the terms of the
+[MIT license].
 
-<a href="https://www.alpine-lab.com"><img src=".github/alpinelab-logo.png" width="40%" /></a>
+<a href="https://www.alpine-lab.com">
+  <img src=".github/alpinelab-logo.png" width="40%" />
+</a>
+
+[Alpine Lab]: https://www.alpine-lab.com
+[git authentication]: https://github.com/alpinelab/docker-ruby-dev/blob/latest/RECIPES.md#git-authentication
+[MIT license]: LICENSE.md
+[RubyGems authentication]: https://github.com/alpinelab/docker-ruby-dev/blob/latest/RECIPES.md#rubygems-authentication
+[Semantic Versioning 2]: https://semver.org/spec/v2.0.0.html
+[`version.rb`]: lib/alpine_lab/code_style/version.rb
