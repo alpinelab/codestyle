@@ -1,10 +1,18 @@
 # File structure and organization
 
-1. Developer-specific configuration files must be git-ignored globally, _e.g._:
+## Git-ignore'd files
 
-    * `.ruby-{version,gemset}`
-    * `docker-compose.override.yml`
+**Developer-specific** configuration files should be
+[git-ignored globally], _e.g._:
 
-2. Project-specific configuration files must be git-ignored per project, _e.g._:
+* `.ruby-version`
+* `.ruby-gemset`
+* `docker-compose.override.yml`
 
-    * `config/database.yml`
+**Project-specific** configuration files should be
+[git-ignored locally] (_i.e._ per project), _e.g._:
+
+* `config/database.yml`
+
+[git-ignored locally]: https://help.github.com/articles/ignoring-files/#create-a-local-gitignore
+[git-ignored globally]: https://help.github.com/articles/ignoring-files/#create-a-global-gitignore
