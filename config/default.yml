@@ -58,6 +58,9 @@ Style/Lambda:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
 
