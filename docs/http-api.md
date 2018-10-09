@@ -36,8 +36,8 @@ thus enforcing the [Single Responsibility Principle].
 [Don't Repeat Yourself]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 [Dredd]: https://github.com/apiaryio/dredd
 [jBuilder]: https://github.com/rails/jbuilder
-[MultiJSON][https://github.com/intridea/multi_json]
+[MultiJSON]: https://github.com/intridea/multi_json
 [Oj]: https://github.com/ohler55/oj
 [OpenAPI Specification 2.0]: https://swagger.io/specification/v2/
 [Single Responsibility Principle]: https://en.wikipedia.org/wiki/Single_responsibility_principle
-[SwaggeUI]: https://swagger.io/tools/swagger-ui
+[SwaggerUI]: https://swagger.io/tools/swagger-ui
