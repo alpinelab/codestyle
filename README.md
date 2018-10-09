@@ -45,16 +45,13 @@ Code style used by AlpineLab in all our projects.
 
 ## Best practices
 
-Some conventions are adopted and enforced, in no particular order:
+Some conventions are adopted and enforced, but cannot be translated as Rubocop
+rules (or are not supposed to). You will find those conventions as Markdown
+files in the [`docs`](docs) directory of this project, organized by subject:
 
-1. Developer-specific configuration files must be git-ignored globally, _e.g._:
-
-    * `.ruby-{version,gemset}`
-    * `docker-compose.override.yml`
-
-2. Project-specific configuration files must be git-ignored per project, _e.g._:
-
-    * `config/database.yml`
+* [File structure and organisation](docs/files.md)
+* [Rails-specific conventions](docs/rails.md)
+* [HTTP API development guidelines](docs/http-api.md)
 
 ## Releases
 
