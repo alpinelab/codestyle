@@ -38,6 +38,7 @@ files in the [`docs`](docs) directory of this project, organized by subject:
 * [File structure and organisation](docs/files.md)
 * [Rails-specific conventions](docs/rails.md)
 * [HTTP API development guidelines](docs/http-api.md)
+* [Applications monitoring](docs/monitoring.md)
 
 ## Releases
 
